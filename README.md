@@ -1,4 +1,4 @@
-# ESLint Config ✅
+# ESLint config ✅
 
 Shareable ESLint configuration
 
