@@ -1,6 +1,6 @@
-# ESLint config
+# ESLint Config ✅
 
-Shareable ESLint configuration.
+Shareable ESLint configuration
 
 ## Install
 
@@ -10,7 +10,7 @@ npm i --save-dev @ecosia/eslint-config
 
 ## Usage
 
-Extends your project ESLint config with the Ecosia one as follows:
+Extends your project's ESLint config with the Ecosia one as follows:
 
 ```
 {
