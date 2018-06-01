@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Ecosia shareable ESLint config ✅",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
   "private": true,
   "repository": {
     "type": "git",
@@ -26,5 +30,8 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-vue": "^4.5.0"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
   }
 }
