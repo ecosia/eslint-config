@@ -1,0 +1,33 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: circleci/node:8-browsers
+
+        steps:
+            - checkout
+            - restore_cache:
+                key: dependency-cache-{{ checksum "package.json" }}
+            - run:
+                name: Install dependencies
+                command: npm install
+            - save_cache:
+                  key: dependency-cache-{{ checksum "package.json" }}
+                  paths:
+                    - ./node_modules
+            - run:
+                name: Add hostname
+                command: echo 127.0.0.1 local.ecosia.org | sudo tee -a /etc/hosts
+            - run:
+                name: Run tests
+                command: npm test
+            - deploy:
+                name: Deploy
+                command: |
+                    if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                        git config --global user.email "dev@ecosia.org"
+                        git config --global user.name "Ecosia automated deployment"
+                        npm publish
+                        git tag "v`node -p -e \"require('./package.json').version\"`"
+                        git push origin $CIRCLE_BRANCH --tags
+                    fi
