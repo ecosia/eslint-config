@@ -6,6 +6,9 @@ jobs:
 
         steps:
             - checkout
+            - run:
+                name: Create .npmrc
+                command: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
             - restore_cache:
                 key: dependency-cache-{{ checksum "package.json" }}
             - run:
