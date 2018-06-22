@@ -7,7 +7,6 @@
     "lint": "eslint .",
     "test": "npm run lint"
   },
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ecosia/eslint-config.git"
