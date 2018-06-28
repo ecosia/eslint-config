@@ -1,6 +1,6 @@
 # ESLint config ✅
 
-Shareable ESLint configuration
+Shareable ESLint configuration. See instructions how to [install and use ESLint](./eslint.md).
 
 ## Install
 
