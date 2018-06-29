@@ -1,6 +1,6 @@
-# ESLint config ✅
+# [ESLint](https://eslint.org) config ✅
 
-Shareable ESLint configuration. See instructions how to [install and use ESLint](./eslint.md).
+Shareable [ESLint](https://eslint.org) configuration. See instructions how to [install and use ESLint](./eslint.md).
 
 ## Install
 
@@ -18,9 +18,9 @@ Extends your project's ESLint config with the Ecosia one as follows:
 }
 ```
 
-### Vue.js
+### [Vue.js](https://vuejs.org)
 
-If you want to lint your Vue.js, only extends the appropriate one:
+If you want to lint your [Vue.js](https://vuejs.org), only extends the appropriate one:
 
 ```
 {
