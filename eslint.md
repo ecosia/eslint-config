@@ -1,4 +1,4 @@
-# ESLint
+# [ESLint](https://eslint.org)
 
 ## About
 
