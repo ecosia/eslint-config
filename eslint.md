@@ -21,8 +21,22 @@ Refer to [official doc](https://eslint.org/docs/user-guide/getting-started#insta
 - If not provided by default or previously deleted, install [linter](https://github.com/steelbrain/linter) package
 - Install [linter-eslint](https://atom.io/packages/linter-eslint) package
 - Enable the option `Fix errors on save` in settings for best experience
+- Optional: if you need to lint Vue.js file:
+    - Enable `Lint HTML files` option
+    - Append `text.html.vue` to the value of `List of scopes to run ESLint on` option
 
 #### [VS Code](https://code.visualstudio.com/)
 
 - Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin
 - Enable option `autoFixOnSave` in settings for best experience
+- Optional: if you need to lint Vue.js file, make sure `eslint.validate` settings contains specification for Vue language, e.g:
+    ```
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ]
+    ```
