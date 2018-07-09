@@ -1,6 +1,6 @@
 {
   "name": "@ecosia/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ecosia shareable ESLint config ✅",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ecosia/eslint-config.git"
   },
   "keywords": [],
-  "author": "Ecosia Dev Team",
+  "author": "Ecosia Dev Team <dev@ecosia.org>",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/ecosia/eslint-config/issues"
