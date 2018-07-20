@@ -4,8 +4,16 @@ Shareable [ESLint](https://eslint.org) configuration. See instructions how to [i
 
 ## Install
 
+With NPM:
+
 ```
-npm i --save-dev @ecosia/eslint-config
+$ npm i --save-dev eslint@^4.19.1 eslint-config-airbnb-base@^12.1.0 eslint-plugin-import@^2.12.0 eslint-plugin-vue@^4.5.0 @ecosia/eslint-config
+```
+
+or Yarn:
+
+```
+$ yarn add --dev eslint@^4.19.1 eslint-config-airbnb-base@^12.1.0 eslint-plugin-import@^2.12.0 eslint-plugin-vue@^4.5.0 @ecosia/eslint-config
 ```
 
 ## Usage
