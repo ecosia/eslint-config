@@ -28,7 +28,8 @@ Refer to [official doc](https://eslint.org/docs/user-guide/getting-started#insta
 #### [VS Code](https://code.visualstudio.com/)
 
 - Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin
-- Enable option `autoFixOnSave` in settings for best experience
+- Enable option `eslint.autoFixOnSave` for best experience
+- Set `eslint.packageManager` to `yarn` if you're using Yarn instead of NPM
 - Optional: if you need to lint Vue.js file, make sure `eslint.validate` settings contains specification for Vue language, e.g:
     ```
     "eslint.validate": [
