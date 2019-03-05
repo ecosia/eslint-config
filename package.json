@@ -1,6 +1,6 @@
 {
   "name": "@ecosia/eslint-config",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Ecosia shareable ESLint config ✅",
   "main": "index.js",
   "scripts": {
@@ -25,10 +25,10 @@
     "eslint-plugin-vue": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-vue": "^4.5.0"
+    "eslint-plugin-vue": "^5.2.2"
   },
   "eslintConfig": {
     "extends": "./index.js"
