@@ -1,6 +1,6 @@
 {
   "name": "@ecosia/eslint-config",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Ecosia shareable ESLint config ✅",
   "main": "index.js",
   "scripts": {
