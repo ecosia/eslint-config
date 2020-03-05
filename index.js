@@ -21,5 +21,6 @@ module.exports = {
     'object-curly-newline': 'off',
     'quote-props': ['error', 'consistent-as-needed'],
     'space-before-function-paren': 'warn',
+    'no-param-reassign': ['error', { props: false }],
   },
 };
