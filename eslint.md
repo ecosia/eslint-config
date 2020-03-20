@@ -28,16 +28,22 @@ Refer to [official doc](https://eslint.org/docs/user-guide/getting-started#insta
 #### [VS Code](https://code.visualstudio.com/)
 
 - Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) plugin
-- Enable option `eslint.autoFixOnSave` for best experience
-- Set `eslint.packageManager` to `yarn` if you're using Yarn instead of NPM
-- Optional: if you need to lint Vue.js files, make sure `eslint.validate` settings contain specifications for the Vue language, e.g:
+- Make sure that your `settings.json` contains the following settings:
+    ```json
+    "eslint.packageManager": "yarn"
     ```
+- Recommended: add these extra options as well:
+    ```json
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "eslint.alwaysShowStatus": true,
+    ```
+- Vue support: make sure `eslint.validate` settings contains the specification for the Vue language:
+    ```json
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
+        "vue"
     ]
     ```
