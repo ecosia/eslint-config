@@ -39,7 +39,7 @@ Refer to [official doc](https://eslint.org/docs/user-guide/getting-started#insta
     },
     "eslint.alwaysShowStatus": true,
     ```
-- Vue support: make sure `eslint.validate` settings contains the specification for the Vue language:
+- Vue support: make sure `eslint.validate` setting contains the specification for the Vue language:
     ```json
     "eslint.validate": [
         "javascript",
