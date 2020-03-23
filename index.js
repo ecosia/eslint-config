@@ -13,7 +13,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'function-paren-newline': ['off'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'indent': ['error', 2],
+    'indent': ['error', 2, { SwitchCase: 1 }],
     'no-alert': 'error',
     'no-console': 'warn',
     'no-new': 'off',
