@@ -27,7 +27,7 @@ jobs:
             - deploy:
                 name: Deploy
                 command: |
-                    if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                    if [ "${CIRCLE_BRANCH}" == "main" ]; then
                         git config --global user.email "dev@ecosia.org"
                         git config --global user.name "Ecosia automated deployment"
                         npm publish
